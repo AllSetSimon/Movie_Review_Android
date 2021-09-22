@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+
+    <Gallery
+        android:id="@+id/gryMovie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/gal"
+        android:spacing="20dp">
+
+    </Gallery>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/touch" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="영화제목"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:fontFamily="@font/hoonddukbokki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영화 제목 공간" />
+
+            <TextView
+                android:id="@+id/tvPremierDate"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개봉일자"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtPremierDate"
+                android:fontFamily="@font/hoonddukbokki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개봉일자 공간" />
+
+            <TextView
+                android:id="@+id/tvPeople"
+                android:layout_margin="2dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출연진"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtPeople"
+                android:fontFamily="@font/hoonddukbokki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출연진 공간" />
+
+            <TextView
+                android:id="@+id/tvContents"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="세부내용"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtContents"
+                android:fontFamily="@font/hoonddukbokki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세부내용 공간" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RatingBar
+            android:id="@+id/rtBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/tvRatingResult"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="25"
+            android:textSize="20dp"
+            android:text="0.0 / 5.0" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTrailer"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border11"
+            android:text="예고편 보기"/>
+
+        <Button
+            android:id="@+id/btnChim"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border11"
+            android:text="기대치 표시"/>
+
+        <Button
+            android:id="@+id/btnWishMovie"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border11"
+            android:text="내 영화 등록"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

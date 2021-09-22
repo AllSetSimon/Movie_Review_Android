@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/rBarReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hoonddukbokki"
+        android:text="영화 선택"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <!--<Button
+        android:id="@+id/btnMovieSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영화 선택"/>-->
+
+    <Spinner
+        android:id="@+id/spnMovie"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_height="38dp"
+        android:spinnerMode="dropdown">
+
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hoonddukbokki"
+        android:text="관람일자"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/btnDate"
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="날짜를 입력하세요"/>
+
+    <TextView
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리뷰 제목"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/edtReviewNM"
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="리뷰 제목을 입력하세요"/>
+
+    <TextView
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리뷰 내용"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/edtReview"
+        android:fontFamily="@font/hoonddukbokki"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="리뷰 상세 내용을 입력하세요"
+        android:lines="8"/>
+
+    <LinearLayout
+        android:id="@+id/LinearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubject"
+            android:fontFamily="@font/hoonddukbokki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="리뷰 제출"/>
+
+        <Button
+            android:id="@+id/btnInitial"
+            android:fontFamily="@font/hoonddukbokki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작성 초기화"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.movie.review.reviewmovie">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconic"
+        android:label="이거어때"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PremierActivity" android:label="개봉예정작"/>
+        <activity android:name=".RegisterActivity" android:label="회원가입" />
+        <activity android:name=".HomeActivity" android:label="홈화면" />
+        <activity android:name=".SettingActivity" android:label="마이페이지"/>
+        <activity android:name=".ReviewRegiActivity" android:label="리뷰등록"/>
+        <activity android:name=".WishMovieActivity" android:label="영화 위시리스트"/>
+        <activity android:name=".OneToFiftyActivity" android:label="OnetoFifty"/>
+        <activity android:name=".RankingActivity" android:label="랭킹"/>
+        <activity android:name=".MemberUpdateActivity" android:label="회원정보수정" />
+        <activity android:name=".ReviewListActivity" android:label="리뷰리스트"/>
+        <activity android:name=".ReviewReadActivity" android:label="리뷰뷰"/>
+        <activity android:name=".CurrentMovieActivity" android:label="현재상영영화" />
+    </application>
+
+</manifest>
